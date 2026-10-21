@@ -1,0 +1,159 @@
+<!DOCTYPE HTML>
+<!--
+	Tampilan berbasis "Solid State" oleh HTML5 UP (html5up.net | @ajlkn)
+	Lisensi CC BY 3.0 (html5up.net/license). Atribusi dipertahankan di footer.
+-->
+<html lang="id">
+<head>
+	<title>Pojok Baca Kelas</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="Perpustakaan digital kelas: e-book dan karya siswa yang bisa dibaca langsung dari Google Drive, plus jutaan buku terbuka gratis." />
+	<meta name="theme-color" content="#2e3141" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="assets/css/app.css" />
+	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+<div id="page-wrapper">
+
+	<header id="header" class="alt">
+		<h1><a href="#atas" id="nm">Pojok Baca</a></h1>
+		<nav><a href="#menu">Menu</a></nav>
+	</header>
+
+	<nav id="menu">
+		<div class="inner">
+			<h2>Menu</h2>
+			<ul class="links">
+				<li><a href="#atas">Beranda</a></li>
+				<li><a href="#koleksi">Koleksi kelas</a></li>
+				<li><a href="#koleksi" id="mOpen">Perpustakaan terbuka</a></li>
+				<li><a href="#koleksi" id="mSaved">Tersimpan</a></li>
+				<li><a href="#tentang">Tentang</a></li>
+			</ul>
+			<a href="#" class="close">Tutup</a>
+		</div>
+	</nav>
+
+	<section id="banner">
+		<div class="inner">
+			<div class="logo"><span class="icon solid fa-book-open"></span></div>
+			<h2>Pojok Baca Kelas</h2>
+			<p>Baca apa saja, di mana saja</p>
+			<div class="smart"><input id="q" type="search" placeholder="Cari judul, penulis, atau tempel tautan Google Drive" aria-label="Cari atau tempel tautan Drive" autocomplete="off"><button id="go">Baca dari Drive</button></div>
+			<ul class="actions">
+				<li><a href="#koleksi" class="button primary">Lihat koleksi</a></li>
+				<li><a href="#tentang" class="button">Tentang</a></li>
+			</ul>
+		</div>
+	</section>
+
+	<section id="wrapper">
+
+		<section id="koleksi" class="wrapper style2">
+			<div class="inner wide">
+				<div id="rcw" hidden><h2 class="major">Lanjutkan membaca</h2><div class="recent" id="rc"></div><div style="height:2.5em"></div></div>
+				<h2 class="major rv">Koleksi digital</h2>
+				<div class="stat rv"><span class="cnt" id="cnt"></span><span class="cnt" id="st"></span>
+					<button class="ib" id="sync" aria-label="Segarkan katalog" data-ic="refresh"></button>
+					<button class="pillb" id="sv" aria-pressed="false"><span data-ic="bm"></span>Tersimpan <b id="svn">0</b></button>
+					<div class="seg vw" id="vw"><button data-v="grid" class="on" aria-label="Tampilan kotak" data-ic="grid"></button><button data-v="list" aria-label="Tampilan daftar" data-ic="list"></button></div></div>
+				<div class="note" id="setup" hidden></div>
+				<div class="tools rv" style="margin-bottom:1em"><div class="seg" id="tab"></div></div>
+				<div class="tools rv" id="tk"><div class="seg" id="kind"></div><div class="seg" id="cats"></div>
+					<select id="fmt" aria-label="Format"><option value="Semua">Semua format</option></select>
+					<select id="sort" aria-label="Urutkan"><option value="new">Terbaru</option><option value="az">Judul A sampai Z</option></select></div>
+				<div class="tools" id="to" hidden>
+					<form class="osearch" id="of"><span data-ic="search"></span><input id="oq" type="search" placeholder="Cari judul atau penulis di perpustakaan terbuka" aria-label="Cari perpustakaan terbuka" autocomplete="off"><button class="pillb pri" type="submit">Cari</button></form>
+					<div class="seg" id="osrc"></div>
+					<select id="olang" aria-label="Bahasa"><option value="all">Semua bahasa</option><option value="id">Indonesia</option><option value="en">Inggris</option></select>
+				</div>
+				<div class="grid" id="grid" aria-live="polite"></div>
+				<div class="more" id="more" hidden><button class="pillb" id="mb">Muat lebih banyak</button></div>
+				<div class="note" id="onote" hidden></div>
+			</div>
+		</section>
+
+		<section id="tentang" class="wrapper spotlight style1">
+			<div class="inner">
+				<a href="#koleksi" class="image"><img src="images/pic01.jpg" alt="" /></a>
+				<div class="content">
+					<h2 class="major">Baca langsung dari Google Drive</h2>
+					<p>Taruh PDF, DOCX, atau slide di satu folder Drive. Website membacanya otomatis, membuat thumbnail, dan menampilkannya di pembaca tanpa perlu mengunduh. File baru muncul sendiri.</p>
+					<a href="#koleksi" class="special">Lihat koleksi kelas</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="wrapper alt spotlight style2">
+			<div class="inner">
+				<a href="#koleksi" class="image"><img src="images/pic02.jpg" alt="" /></a>
+				<div class="content">
+					<h2 class="major">Perpustakaan terbuka</h2>
+					<p>Cari di Project Gutenberg, Internet Archive, dan Open Library sekaligus. Hanya buku domain publik atau akses terbuka, jadi gratis dan legal untuk dibaca online.</p>
+					<a href="#koleksi" class="special" id="aOpen">Cari buku terbuka</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="wrapper style3">
+			<div class="inner">
+				<h2 class="major">Dibuat untuk membaca</h2>
+				<p>Pembaca yang nyaman di HP maupun komputer, dengan semua yang kamu butuhkan di satu tempat.</p>
+				<section class="features">
+					<article><a href="#koleksi" class="image"><img src="images/pic05.jpg" alt="" /></a><h3 class="major">Tanpa mengunduh</h3><p>Buka dokumen langsung di halaman, lengkap dengan tombol layar penuh dan pindah buku.</p></article>
+					<article><a href="#koleksi" class="image"><img src="images/pic06.jpg" alt="" /></a><h3 class="major">PDF, DOCX, dan lainnya</h3><p>Mendukung PDF, Word, PowerPoint, Excel, Google Docs, gambar, dan video.</p></article>
+					<article><a href="#koleksi" class="image"><img src="images/pic07.jpg" alt="" /></a><h3 class="major">Simpan dan lanjutkan</h3><p>Tandai buku favorit dan lanjutkan dari bacaan terakhir di perangkat yang sama.</p></article>
+					<article><a href="#koleksi" class="image"><img src="images/pic08.jpg" alt="" /></a><h3 class="major">Gratis dan legal</h3><p>Sumber terbuka yang sah, tanpa akun dan tanpa iklan.</p></article>
+				</section>
+			</div>
+		</section>
+
+	</section>
+
+	<section id="footer">
+		<div class="inner">
+			<h2 class="major">Baca dari tautan</h2>
+			<p>Punya tautan file atau folder Google Drive yang dibagikan publik? Tempel di sini untuk langsung membacanya.</p>
+			<form id="fd" action="#">
+				<div class="fields"><div class="field"><label for="fq">Tautan Google Drive</label><input type="text" id="fq" placeholder="https://drive.google.com/file/d/..." /></div></div>
+				<ul class="actions"><li><input type="submit" value="Baca sekarang" /></li></ul>
+			</form>
+			<ul class="contact">
+				<li class="icon solid fa-school" id="kl2"></li>
+				<li class="icon solid fa-cloud">Koleksi dibaca otomatis dari Google Drive</li>
+				<li class="icon solid fa-globe">Project Gutenberg, Internet Archive, Open Library</li>
+			</ul>
+			<ul class="copyright">
+				<li id="kl"></li><li>Desain: <a href="https://html5up.net">HTML5 UP</a> (CC BY 3.0)</li>
+			</ul>
+		</div>
+	</section>
+</div>
+
+<div id="reader" hidden role="dialog" aria-modal="true" aria-label="Pembaca">
+	<div class="rbar">
+		<button class="ib" id="rcl" aria-label="Tutup pembaca" data-ic="x"></button>
+		<button class="ib" id="rp" aria-label="Sebelumnya" data-ic="back"></button><button class="ib" id="rn" aria-label="Berikutnya" data-ic="next"></button>
+		<div class="rtt"><b id="rt"></b><small id="ra"></small></div>
+		<button class="ib" id="ri" aria-label="Tampilkan info" data-ic="info"></button>
+		<button class="ib" id="rf" aria-label="Layar penuh" data-ic="full"></button>
+		<a class="ib" id="rd" target="_blank" rel="noopener" aria-label="Unduh" data-ic="down"></a>
+	</div>
+	<div class="rmain" id="rm">
+		<div class="stage" id="stage"><div class="load" id="load"><i></i></div><iframe id="fr" title="Isi dokumen" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+		<aside class="info" id="info"></aside>
+	</div>
+</div>
+<div id="toast" role="status"></div>
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
